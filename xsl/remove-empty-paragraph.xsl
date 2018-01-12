@@ -11,7 +11,7 @@
   xmlns:ouc="http://omniupdate.com/XSL/Variables"
   exclude-result-prefixes="xs ou fn ouc">
 
-  <xsl:template match="p[node() = '&nbsp;']"></xsl:template>
+  <xsl:template match="p[node() = '&nbsp;'][not(*)]"></xsl:template>
 
 </xsl:stylesheet>
 
