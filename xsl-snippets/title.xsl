@@ -8,6 +8,8 @@
 -->
 
 <title>
+    <xsl:variable name="pageTitle"
+        select="/document/ouc:properties[@label='metadata']/title">
     <xsl:choose>
         <xsl:when test="$pageTitle = ''">
             <xsl:variable name="props-content"
