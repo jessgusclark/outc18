@@ -41,11 +41,6 @@ Jesse's Notes:
 		<xsl:param name="path" select="$dirname" /> <!-- defined in the vars xsl as $ou:dirname with a trailing '/' -->
 		<xsl:param name="title" select="ou:pcfparam('breadcrumb')" /> <!-- defined in vars as the title of the current page -->	
 		
-		<!-- If sub domain then add www -->
-		<xsl:if test="$ou:site != 'www'">
-			<li><a href="http://www.unco.edu">UNC</a></li>
-		</xsl:if>
-		
 		<!-- begin the recursive template for the crumbs (below) -->
 		
 		<!-- check for valid breadcrumbStart to prevent infinite recursion -->
@@ -54,8 +49,6 @@ Jesse's Notes:
 				<xsl:with-param name="path" select="$dirname"/>
 			</xsl:call-template>	
 		</xsl:if>
-		
-		
 		
 		<!-- if the file is not the index page, display the final crumb -->
 		<xsl:if test="not(contains($ou:filename,concat($index-file,'.')))">
@@ -101,10 +94,6 @@ Jesse's Notes:
 		
 		
 		<xsl:choose>
-        	<!-- If link option is set to No. -->
-            <xsl:when test="document($this-props-path)/document/ouc:properties[@label='config']/parameter[@name='link']/option[@selected='true'] = 'No'">
-            	  <li class="unavailable"><xsl:value-of select="$title"/></li>
-            </xsl:when>
 			<!-- if the path matches the current directory, and the current page is an index file, then display without an anchor element -->
 			<xsl:when test="$path = $dirname and (contains($ou:filename,'default.') or contains($ou:filename,'index.'))">
 				<li><xsl:value-of select="$title"/></li>
