@@ -1,4 +1,4 @@
-# outc18
+# Tackling Quality Control with XSL
 
 ![Tackling Quality Control with XSL](https://www.jessclark.com/wp-content/uploads/2018/03/outc18-header.jpg)
 
