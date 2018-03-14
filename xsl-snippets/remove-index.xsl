@@ -24,6 +24,6 @@
         </xsl:for-each>
         
         <!-- display link text -->
-        <xsl:value-of select="node()" />
+        <xsl:copy-of select="node()" />
     </xsl:element>
 </xsl:template>
