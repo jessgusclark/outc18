@@ -7,7 +7,7 @@
 -->
 
 <!-- Do not allow scripts in editable regions. This is mostly for the Web Content Asset: -->
-<xsl:template match="ouc:div/*/script|ouc:div/script">
+<xsl:template match="ouc:div/script|ouc:div/*/script">
     <xsl:comment>
         Scripts in the content region have been disabled. 
         Contact Web Communications for help with execuiting JavaScript.
