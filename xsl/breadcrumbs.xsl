@@ -99,7 +99,10 @@ Jesse's Notes:
 				<li><xsl:value-of select="$title"/></li>
 			</xsl:when>
 			<xsl:otherwise>
-            
+	
+				<!-- Previous List item:  
+				<li><a href="{concat($link-start,$path)}"><xsl:value-of select="$title"/></a></li>
+                -->
                 <!-- Structured Data List Item -->
                 <li property="itemListElement" typeof="ListItem">
                     <a property="item" typeof="WebPage" href="{concat($link-start,$path)}">
