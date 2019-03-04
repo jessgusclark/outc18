@@ -1,6 +1,6 @@
 # Tackling Quality Control with XSL
 
-![Tackling Quality Control with XSL](https://www.jessclark.com/wp-content/uploads/2018/03/outc18-header.jpg)
+![Tackling Quality Control with XSL](https://developerjesse.com/assets/images/2018-03-27/outc18-header.jpg)
 
 Repo for presentation for [OUTC 2018](https://outc18.com/) in Anaheim California. 
 
